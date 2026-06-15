@@ -63,26 +63,4 @@ run_hyperparameter_screening('runOnlyMode','imagenet_pretrained')
 
 Settings are selected by validation macro-F1. Held-out test metrics are not used for hyperparameter selection.
 
-## Confusion matrices
 
-After running final evaluation, plot aggregated row-normalized confusion matrices:
-
-```matlab
-plot_confusion_matrices
-```
-
-The function aggregates saved `confusion_run_*_seed_*.csv` files across repeated held-out test runs.
-
-## Main output files
-
-- `all_run_metrics.csv`
-- `all_class_metrics.csv`
-- `summary_mean_sd.csv`
-- `class_summary_mean_sd.csv`
-- `final_method_configs.csv`
-- `confusion_run_*_seed_*.csv`
-
-## Notes
-
-- If SEM images are crops from larger parent micrographs, set `groupSplitByParent` to `true` and edit `parentIdFromFilename()` to match the file-naming convention.
-- If the transfer-learning weights are not shared publicly, run `main('runTransfer',false)`.
