@@ -1,7 +1,7 @@
 # NCM955 SEM Image Classification
 
 This repository contains MATLAB code for SEM image-based classification of NCM955 calendering-induced electrode states.
-The ML task is four-class SEM image classification.\
+The ML task is four-class SEM image classification.
 
 ## Data layout
 
